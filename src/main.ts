@@ -20,18 +20,10 @@ function getStringMapConfig() {
     return script.dataset;
   }
 
-  const url = new URL(import.meta.url, document.baseURI).href;
-  let scriptEl: HTMLScriptElement | null = null;
-  for (const s of Array.from(document.getElementsByTagName("script"))) {
-    if (s.src === url) {
-      scriptEl = s as HTMLScriptElement;
-      break;
-    }
-  }
+  const scripts = document.querySelectorAll("script[data-imofix-url]");
 
-  if (scriptEl) {
-    return scriptEl.dataset;
-  }
+  return (scripts[scripts.length - 1] as HTMLScriptElement | undefined)
+    ?.dataset;
 }
 
 const bannerConfig = getBannerConfig(getStringMapConfig());

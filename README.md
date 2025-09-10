@@ -31,7 +31,7 @@ Here is an overview of all supported attributes. If you have questions about the
 
 ### Configuring the floating button
 
-In addition to the above attributes, you can use the following attributes to customize the floating button.
+In addition to the above attributes, you can add the following attributes to the script tag to customize the floating button:
 
 | Attribute                           | Description                                                                               |
 | ----------------------------------- | ----------------------------------------------------------------------------------------- |
@@ -43,7 +43,7 @@ In addition to the above attributes, you can use the following attributes to cus
 | `data-button-bottom` (optional)     | How far from the bottom the banner should float (e.g. `24px` - use either top or bottom). |
 | `data-button-left` (optional)       | How far from the left the banner should float (e.g. `24px` - use either right or left).   |
 
-For more styling options, please use CSS custom properties. You can find all supported properties in [button.css](src/button.css).
+If you want more customization, you can use CSS custom properties—see [button.css](src/button.css) for all options. If you want even more customization, it may be best to remove `show-button` altogether and open the banner imperatively with your own button.
 
 ### Opening the banner imperatively
 
