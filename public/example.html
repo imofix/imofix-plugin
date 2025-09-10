@@ -4,19 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="robots" content="noindex" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>imofix Plugin</title>
+    <title>imofix Plugin Example</title>
   </head>
   <body>
-    <button onclick="imofix.openBanner();">Open imperatively</button>
-
     <script
-      type="module"
-      src="/src/main.ts"
+      src="/banner.js"
+      defer
       data-customer-id="imofix"
-      data-imofix-url="http://localhost:4173"
       data-auto-open
       data-show-button
-      data-button-text="foo"
     ></script>
   </body>
 </html>
