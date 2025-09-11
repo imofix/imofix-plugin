@@ -1,7 +1,7 @@
 import { detectBrowserLanguage } from "./i18n.ts";
 
 export interface BannerConfig {
-  customerId: string;
+  imofixId: string;
   imofixUrl: string;
   lang: string;
   autoOpen: boolean;
@@ -26,9 +26,9 @@ export function getBannerConfig(
     throw Error("[imofix-banner] Script configuration was not found.");
   }
 
-  if (!stringMap.customerId) {
+  if (!stringMap.imofixId) {
     throw Error(
-      "[imofix-banner] Script tag is missing required attribute `data-customer-id`",
+      "[imofix-banner] Script tag is missing required attribute `data-imofix-id`",
     );
   }
 
@@ -39,7 +39,7 @@ export function getBannerConfig(
   }
 
   return {
-    customerId: stringMap.customerId,
+    imofixId: stringMap.imofixId,
     imofixUrl: stringMap.imofixUrl,
     lang: stringMap.lang || detectBrowserLanguage(),
     autoOpen: parseBoolean(stringMap.autoOpen),

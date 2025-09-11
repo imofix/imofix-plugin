@@ -4,6 +4,9 @@
 
 The banner is a way for your website's users to discover the services offered by you as well as the imofix renter service platform.
 
+> [!NOTE]  
+> To use the banner, the feature has to be enabled for your imofix account first. Contact [support@imofix.io](mailto:support@imofix.io) for any questions.
+
 ### Getting started
 
 Add this script tag anywhere in your website's HTML. It has to be added on every page where you would like to show the banner.
@@ -12,7 +15,7 @@ Add this script tag anywhere in your website's HTML. It has to be added on every
 <script
   src="https://plugin.imofix.io/banner.js"
   defer
-  data-customer-id="your-customer-id"
+  data-imofix-id="your-imofix-id"
   data-imofix-url="https://service.your-website.com"
   data-auto-open
   data-show-button
@@ -22,8 +25,8 @@ Add this script tag anywhere in your website's HTML. It has to be added on every
 Here is an overview of all supported attributes. If you have questions about the configuration or don't know some of the information, please contact [support@imofix.io](mailto:support@imofix.io).
 
 | Attribute                     | Description                                                                                                             |
-| ----------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| `data-customer-id`            | Your imofix customer ID.                                                                                                |
+|-------------------------------|-------------------------------------------------------------------------------------------------------------------------|
+| `data-imofix-id`              | Your imofix ID.                                                                                                         |
 | `data-imofix-url`             | The URL of your imofix instance.                                                                                        |
 | `data-lang` (optional)        | The language to use. Falls back to your `<html>` tag's `lang` attribute or the browser's language.                      |
 | `data-auto-open` (optional)   | If set, the banner will open automatically. With some privacy settings (e.g. incognito tabs), this may not always work. |
