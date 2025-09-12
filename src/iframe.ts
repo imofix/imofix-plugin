@@ -89,7 +89,7 @@ export function createOpenIFrame(config: BannerConfig) {
     root.className = "open";
     iframe.setAttribute(
       "src",
-      `${origin}${VITE_BANNER_PATH}?tenantId=${config.imofixId}`,
+      `${origin}${VITE_BANNER_PATH}?tenantId=${config.imofixId}&lng=${config.lang}`,
     );
   };
 }
