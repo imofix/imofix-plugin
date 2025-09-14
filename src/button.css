@@ -32,8 +32,8 @@
 
   position: var(--imofix-button-position, fixed);
   top: var(--imofix-button-top);
-  right: var(--imofix-button-right, 24px);
-  bottom: var(--imofix-button-bottom, 24px);
+  right: var(--imofix-button-right);
+  bottom: var(--imofix-button-bottom);
   left: var(--imofix-button-left);
   z-index: var(--imofix-button-z-index, 9998);
 }

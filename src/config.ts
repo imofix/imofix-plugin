@@ -45,6 +45,11 @@ export function getBannerConfig(
     autoOpen: parseBoolean(stringMap.autoOpen),
     showButton: parseBoolean(stringMap.showButton),
     buttonColor: stringMap.buttonColor,
-    buttonBackground: stringMap.buttonColor,
+    buttonBackground: stringMap.buttonBackground,
+    buttonText: stringMap.buttonText,
+    buttonTop: stringMap.buttonTop,
+    buttonRight: stringMap.buttonRight,
+    buttonBottom: stringMap.buttonBottom,
+    buttonLeft: stringMap.buttonLeft,
   };
 }

@@ -49,7 +49,7 @@ export function createOpenIFrame(config: BannerConfig) {
     const iframe = document.createElement("iframe");
     iframe.setAttribute(
       "sandbox",
-      "allow-same-origin allow-scripts allow-top-navigation-by-user-activation",
+      "allow-same-origin allow-popups allow-scripts allow-top-navigation-by-user-activation",
     );
     iframe.id = "imofix-modal-iframe";
     iframe.tabIndex = 0;
